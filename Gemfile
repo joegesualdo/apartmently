@@ -11,9 +11,9 @@ group :production do
 end
 
 group :development do
+  gem 'rb-readline', '~> 0.4.2'
   gem 'guard'
   gem 'guard-rails'
-  gem 'rb-readline'
   gem 'guard-rspec', require: false
 end
 
