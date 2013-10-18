@@ -10,6 +10,13 @@ group :production do
   gem 'pg'
 end
 
+group :development do
+  gem 'guard'
+  gem 'guard-rails'
+  gem 'rb-readline'
+  gem 'guard-rspec', require: false
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
 end
