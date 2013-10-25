@@ -11,6 +11,7 @@ group :production do
 end
 
 group :development do
+  gem 'pry-rails'
   gem 'rb-readline', '~> 0.4.2'
   gem 'guard'
   gem 'guard-rails'
