@@ -25,7 +25,7 @@ group :test do
   gem 'capybara'
 end
 
-gem 'haml-rails'
+gem 'slim-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
