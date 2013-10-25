@@ -7,7 +7,7 @@ describe "On Homepage" do
     expect(page).to have_content 'About'
   end
 
-  it "lenght method should work" do
+  it "length method should work" do
     expect("hello".length).to eq 5
   end
 end

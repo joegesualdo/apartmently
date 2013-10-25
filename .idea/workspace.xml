@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b122354a-1574-44e2-a09d-63de0dea1c58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__apartmently.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__apartmently.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/about.haml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/home.haml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/homepage_spec.rb" afterPath="$PROJECT_DIR$/spec/homepage_spec.rb" />
     </list>
     <ignored path="apartmently.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="homepage_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="homepage_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/homepage_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="11" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+            <state line="9" column="12" selection-start="200" selection-end="200" vertical-scroll-proportion="0.2020958" vertical-offset="0" max-vertical-offset="668">
               <folding />
             </state>
           </provider>
@@ -58,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.slim" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="about.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/about.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
               <folding />
             </state>
           </provider>
@@ -103,8 +94,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/homepage_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/about.slim" />
+        <option value="$PROJECT_DIR$/spec/homepage_spec.rb" />
       </list>
     </option>
   </component>
@@ -602,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/homepage_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/home.slim">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="33" selection-start="39" selection-end="39" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
@@ -618,7 +602,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/about.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/homepage_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="200" selection-end="200" vertical-scroll-proportion="0.2020958" vertical-offset="0" max-vertical-offset="668">
           <folding />
         </state>
       </provider>
