@@ -28,6 +28,7 @@ group :test do
   gem 'shoulda-matchers'
 end
 
+gem 'annotate', ">=2.5.0"
 gem 'slim-rails'
 
 # Use SCSS for stylesheets
