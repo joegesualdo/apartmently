@@ -19,7 +19,6 @@ describe Rental do
   it {should validate_presence_of(:price)}
   it {should validate_presence_of(:beds)}
   it {should validate_presence_of(:bathrooms)}
-
   # True/False validations. Shoulda-matchers error: https://github.com/thoughtbot/shoulda-matchers/issues/179
   it { should allow_value(true).for(:cats)}
   it { should allow_value(false).for(:cats)}
@@ -35,7 +34,8 @@ describe Rental do
     expect(rental).to_not be_valid
   end
 
-
-
+  it "should increment the count by 2" do
+    expect{FactoryGirl.build(:rental).save}.to change{Rental.count}.by(1)
+  end
   #it {should have_many(:pictures)}
 end

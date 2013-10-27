@@ -2,3 +2,5 @@ h1 Home
 
 = link_to 'About', about_path
 
+-@rentals.each do |rental|
+  = link_to rental.price, rental_path(rental)
