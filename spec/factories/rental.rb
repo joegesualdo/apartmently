@@ -12,7 +12,7 @@ FactoryGirl.define do
     beds 2
     bathrooms 3
     cats false
-    dogs false
+    dogs true
     after(:create) do |rental|
       rental.address = FactoryGirl.build(:address)
     end
