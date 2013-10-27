@@ -18,3 +18,4 @@
 # Ignore RubyMine Files
 .idea
  ./.idea
+.idea/*
