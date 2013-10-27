@@ -16,6 +16,7 @@
 /tmp
 
 # Ignore RubyMine Files
-.idea
+/.idea
  ./.idea
 .idea/*
+.idea/workspace.xml
