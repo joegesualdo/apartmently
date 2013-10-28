@@ -14,7 +14,7 @@ FactoryGirl.define do
     cats false
     dogs true
     after(:create) do |rental|
-      rental.address = FactoryGirl.build(:address)
+      rental.address = FactoryGirl.build(:address).save
     end
   end
 
