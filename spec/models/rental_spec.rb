@@ -17,7 +17,14 @@ require 'spec_helper'
 
 describe Rental do
 
-  it {should have_one(:address)}
+  let(:rental){FactoryGirl.build(:rental)}
+  let(:address){ {line1: "544 Washington ave", city: "Wayne", state: "NJ", zipcode: '07758'} } # TODO: how to store has in FG?
+
+  # Associations
+  context "Associations" do
+    it { should have_one(:address)}
+  end
+
   it {should validate_presence_of(:price)}
   it {should validate_presence_of(:beds)}
   it {should validate_presence_of(:bathrooms)}
@@ -27,21 +34,14 @@ describe Rental do
   it { should allow_value(true).for(:dogs)}
   it { should allow_value(false).for(:dogs)}
 
-  context "with valid credentials" do
-    before :each do
-      @rental = FactoryGirl.build(:rental)
-      #Must find a way to store address in FactoryGirl. Can't do it currently because we need to pass as hash into create
-                                                                                                        # address
-      address = {line1: "544 Washington ave", city: "Wayne", state: "NJ", zipcode: '07758'}
-      @rental.create_address(address)
-    end
+  it "is invalid without"
 
     it 'factory should be valid' do
-      expect(@rental).to be_valid
+      expect(rental).to be_valid
     end
 
     it "should successfully be created" do
-      expect{@rental.save}.to change{Rental.count}.by(1)
+      expect{rental.save}.to change{Rental.count}.by(1)
     end
 
     it "should have correct beds" do
@@ -50,12 +50,13 @@ describe Rental do
     end
 
     it "#destroy" do
-      @rental.save
-      @rental.destroy
+      rental.save
+      rental.destroy
       expect(Rental.count).to eq 0
     end
-    it "should have correct address" do
-      expect(@rental.address.city ).to eq 'Wayne'
+    it "should take address" do
+      rental.create_address(address)
+      expect(rental.address.city ).to eq 'Wayne'
     end
-  end
+
 end
