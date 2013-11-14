@@ -20,21 +20,23 @@ describe Rental do
   let(:rental){FactoryGirl.build(:rental)}
   let(:address){ {line1: "544 Washington ave", city: "Wayne", state: "NJ", zipcode: '07758'} } # TODO: how to store has in FG?
 
+  subject { rental }
   # Associations
   context "Associations" do
     it { should have_one(:address)}
-    xit{ should have_many(:features)}
-    xit{ should have_one(:neighborhood)}
+    it{ should have_many(:features)}
+    it{ should belong_to(:neighborhood)}
+    it{ should have_many(:pictures)}
   end
 
-  context 'model attributes' do
-    it { should respond_to :price }
-    it { should respond_to :cats }
-    it { should respond_to :dogs }
-    it { should respond_to :beds }
-    it { should respond_to :bathrooms }
-    it { should respond_to :available? }
-    it { should respond_to :date_available }
+  context 'table columns' do
+    expect_it { to respond_to :price }
+    expect_it { to respond_to :cats }
+    expect_it { to respond_to :dogs }
+    expect_it { to respond_to :beds }
+    expect_it { to respond_to :bathrooms }
+    expect_it { to respond_to :available? }
+    expect_it { to respond_to :date_available }
   end
 
   it {should validate_presence_of(:price)}
@@ -76,4 +78,6 @@ describe Rental do
     expect(rental.address.city ).to eq 'Wayne'
   end
 
+  context '.transit' do
+  end
 end

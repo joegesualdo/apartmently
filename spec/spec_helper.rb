@@ -43,3 +43,14 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 end
+
+# This code makes it possible for us to use implicit `subject` with `expect` in RSpec-2.11
+# Make expect_it { } syntax available
+# Explaination can be found here: http://stackoverflow.com/questions/12260534/using-implicit-subject-with-expect-in-rspec-2-11
+RSpec.configure do |config|
+  config.alias_example_to :expect_it
+end
+RSpec::Core::MemoizedHelpers.module_eval do
+  alias to should
+  alias to_not should_not
+end
